@@ -8,7 +8,7 @@
     {% for product in products %}
     <div class="col-lg-4">
         <div class="card" style="width: 18rem;">
-            <img src="{% static 'images/headphones.png' %}" class="card-img-top" alt="...">
+            <img src="{{product.imageURL}}" class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">{{ product.name }}</h5>
                 <p class="card-text">Digital: {{ product.digital }}</p>
